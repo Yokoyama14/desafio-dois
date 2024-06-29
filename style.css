@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 1;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.imagem-cabeçalho{
+    width: 100px;
+    align-items: center;
+}
