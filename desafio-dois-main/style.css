@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 120vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+}
+.textos{
+    
+    flex-flow: column;
+    width: 100%;
+    height: 110vh;
+}
+nav.menu-lateral{
+    width: 55px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #c9c1e5;
+    position:fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn.expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #c9c1e5;
+}
+
+ul li.item-menu:hover{
+    background: #c9c1e5;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 20px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.imagem-cabeçalho{
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+   
+    
+}
+.cabeçalho {
+    background-color: #ECE8E4;
+    height: 100px;
+    width: auto;
+}
+
+.titulo-um{
+    color: #fff;
+    padding-left: 40%;
+    text-align: center;
+    top: 13%;
+    position: absolute;
+}
+
+.texto-um{
+    color: #fff;
+    padding-left: 10%;
+    font-size: 25px;
+    top: 22%;
+    position: absolute;
+}
+
+.texto-dois{
+    color: #fff;
+    padding-left: 10%;
+    font-size: 25px;
+    top: 34%;
+    position: absolute;
+}
+
+.texto-tres{
+    color: #fff;
+    padding-left: 10%;
+    font-size: 25px;
+    top: 50%;
+    position: absolute;
+}
+
+
+.mapBox{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: #c9c1e5;
+    top: 45%;
+    display: block;
+    margin: auto;
+
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape{
+    font-size: 25pt;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #c9c1e5;
+   
+
+
+}

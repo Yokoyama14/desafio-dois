@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+}
+.textos{
+    
+    flex-flow: column;
+    width: 100%;
+    height: 100vh;
+}
+nav.menu-lateral{
+    width: 55px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #c9c1e5;
+    position:fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn.expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #c9c1e5;
+}
+
+ul li.item-menu:hover{
+    background: #c9c1e5;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 20px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.imagem-cabeçalho{
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+   
+    
+}
+.cabeçalho {
+    background-color: #ECE8E4;
+    height: 100px;
+    width: auto;
+}
+
+.titulo-um{
+    color: #fff;
+
+    top: 15%;
+    position: absolute;
+    padding: 30px;
+}
+
+.horarios{
+    color: #fff;
+    padding: 50px;
+    border-block: none;
+    text-align: center;
+    
+}
+
+table {
+    top: 30%;
+   width:95%;
+   height: 40%;
+   padding-left: 10%;
+   position: absolute;
+}
+textarea {
+    width: 370px;
+    height: 100px;
+    resize: none;
+}
+
+table thead {
+    background: rgb(222,94,0);
+    font-size: 35px;
+    padding-left: 35%;
+    align-items: center;
+    justify-content: center;
+
+}
+table thead tr td {
+    text-align: center;
+    color: #fff;
+    
+}
+table thead tr td:nth-child(1) {
+    text-align: left;
+    color: #fff;
+    
+}
+table tbody tr td {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+table tbody tr:nth-child(even) {
+    background: rgb(89,181,177);
+    color: #fff;
+}
+table tbody tr td:nth-child(1) {
+    text-align: left;
+    color: #fff;
+}
+
+
+.rodape{
+    font-size: 25pt;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #c9c1e5;
+   
+
+
+}
